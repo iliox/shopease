@@ -3,7 +3,7 @@
     
     // Register button click
     $("#register").on('click', function(e) {
-      var api_url = "http://6489a35483bb.ngrok.io";
+      var api_url = "https://6489a35483bb.ngrok.io";
       var person = {
           username: $("#username").val(),
           phone:$("#phone").val(),
