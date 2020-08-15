@@ -33,7 +33,7 @@
                 $('#loginResults').html(data.message);
                 localStorage.setItem("token", data.token);
                 localStorage.setItem("token_data", JSON.stringify(parseJwt(data.token)));
-                $( location ).attr("href", "./index.html");
+                $( location ).attr("href", "./demands.html");
             },
             error: function (data) {
                 console.log(data);
