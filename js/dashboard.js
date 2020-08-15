@@ -27,9 +27,9 @@
                         }
                     }
                     if(res.demands[i].assigned==0){
-                        dataset.push([res.demands[i]._id,res.demands[i].itemname, res.demands[i].description, res.demands[i].contact, res.demands[i].pincode]);
                         pending_demands++;
                         if(res.demands[i].pincode==user_data.pincode){
+                            dataset.push([res.demands[i]._id,res.demands[i].itemname, res.demands[i].description, res.demands[i].contact, res.demands[i].pincode]);
                             area_demands++;
                         }
                     }
