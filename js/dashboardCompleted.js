@@ -1,7 +1,7 @@
 (function($) {
     "use strict";
     $(document).ready(function() {
-        var api_url = "http://6489a35483bb.ngrok.io";
+        var api_url = "https://6489a35483bb.ngrok.io";
         var user_data = JSON.parse(localStorage.getItem("token_data"));
         $('#username').html(user_data.username);
         $.ajax({

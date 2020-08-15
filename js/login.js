@@ -12,7 +12,7 @@
     };
 
     $("#login").on('click', function(e) {
-        var api_url = "http://6489a35483bb.ngrok.io";
+        var api_url = "https://6489a35483bb.ngrok.io";
         var person = {
             username: $("#username").val(),
             password:$("#password").val(),
