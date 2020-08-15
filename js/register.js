@@ -3,7 +3,7 @@
     
     // Register button click
     $("#register").on('click', function(e) {
-      console.log("ok");
+      var api_url = "http://6489a35483bb.ngrok.io";
       var person = {
           username: $("#username").val(),
           phone:$("#phone").val(),
@@ -22,7 +22,7 @@
       $('#registerResults').html('Registering...');
   
       $.ajax({
-          url: 'http://localhost:3000/user/signup',
+          url: api_url+'/user/signup',
           type: 'post',
           dataType: 'json',
           contentType: 'application/json',

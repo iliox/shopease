@@ -12,7 +12,7 @@
     };
 
     $("#login").on('click', function(e) {
-        console.log("ok");
+        var api_url = "http://6489a35483bb.ngrok.io";
         var person = {
             username: $("#username").val(),
             password:$("#password").val(),
@@ -25,7 +25,7 @@
         $('#loginResults').html('Logging in...');
 
         $.ajax({
-            url: 'http://localhost:3000/user/login',
+            url: api_url+'/user/login',
             type: 'post',
             dataType: 'json',
             contentType: 'application/json',

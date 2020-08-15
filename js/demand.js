@@ -3,7 +3,7 @@
     
     // Register button click
     $("#demand").on('click', function(e) {
-      console.log("ok");
+      var api_url = "http://6489a35483bb.ngrok.io";
       var person = {
           itemname: $("#itemname").val(),
           description: $("#description").val(),
@@ -17,7 +17,7 @@
       $('#demandResults').html('Generating Demand...');
   
       $.ajax({
-          url: 'http://localhost:3000/demand',
+          url: api_url+'/demand',
           type: 'post',
           dataType: 'json',
           contentType: 'application/json',
